@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="TA3.js"></script>
+</head>
+<body>
+    <!-- Parte 1 -->
+    <div>
+        <label for="largo">Ingrese longitud de su contraseña:</label>
+        <input type="text" id="largo">
+    </div>
+    <div>
+        <button id="password" onclick="generatePassword()">Generar</button>
+    </div>
+    <div id="contraseña"></div>
+    <!-- Parte 2 -->
+    <div>
+        <label for="personas">Ingrese las personas como un array de objetos [{"nombre":"nombre", "edad":"edad"}]:</label>
+        <textarea type="text" id="personas"></textarea>
+    </div>
+    <div>
+        <button id="masViejo" onclick="getTheOldest()">Buscar el mayor</button>
+    </div>
+    <div id="resultado"></div>
+</body>
+</html>
