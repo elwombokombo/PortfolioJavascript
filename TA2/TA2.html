@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="TA2.js"></script>
+</head>
+<body>
+    <!-- 1. Suma de Rango: -->
+    <div>
+        <label for="numeroA">Ingrese el primer número:</label>
+        <input type="text" id="numeroA">
+    </div>
+    <div>
+        <label for="numeroB">Ingrese el segundo número:</label>
+        <input type="text" id="numeroB">
+    </div>
+    
+    <div class="botones">
+        <button id="sumar" onclick="sumAll()">Sumar todo</button>
+    </div>
+    <div id="resultado"></div>
+    
+    <!-- 2. Conversión de Temperatura: -->
+    <div>
+        <label for="TF">Ingrese la temperatura en Farenheit:</label>
+        <input type="text" id="TF">
+    </div>
+    <div>
+        <button id="convertirFC" onclick="convertToCelsius()">Convertir a Celsius</button>
+    </div>
+    <div id="resultado1"></div>
+    <div>
+        <label for="TC">Ingrese la temperatura en Celsius:</label>
+        <input type="text" id="TC">
+    </div>
+    <div>
+        <button id="convertirCF" onclick="convertToFarenheit()">Convertir a Farenheit</button>
+    </div>
+    <div id="resultado2"></div>
+
+    <!-- 3. Determinación de Año Bisiesto: -->
+    <div>
+        <label for="year">Ingrese un año:</label>
+        <input type="text" id="year">
+    </div>
+    
+    <div>
+        <button id="bisiesto" onclick="leapYears()">¿Es bisiesto?</button>
+    </div>
+    <div id="resultado3"></div>
+
+    <!-- 4. Suma de Elementos de un Arreglo:  -->
+    <div>
+        <label for="arreglo">Arreglo (separar por comas):</label>
+        <input type="text" id="arreglo">
+    </div>
+    
+    <div>
+        <button id="suma" onclick="getSum()">Suma</button>
+    </div>
+    <div id="resultado4"></div>
+</body>
+</html>
