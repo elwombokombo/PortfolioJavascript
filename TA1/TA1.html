@@ -3,26 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manipulación de Cadenas y Arreglos</title>
-    <link rel="stylesheet" href="styles.css">
-    <script type="module" src="TA1.js"></script>
+    <title>Tarea 1</title>
+    <link rel="stylesheet" href="TA1.css">
+    <script defer src="TA1.js"></script>
 </head>
 <body>
-    <h1>Manipulación de Cadenas</h1>
-
-    <h2>Repetir Cadena</h2>
-    <label for="textoRepetir">Texto:</label>
-    <input type="text" id="textoRepetir" placeholder="Ingresa el texto">
-    <label for="repeticiones">Repeticiones:</label>
-    <input type="number" id="repeticiones" placeholder="Número de repeticiones">
+    <h2>----Manipulación de Cadenas----</h2>
+    
+    <!-- Repetir texto -->
+    <label for="repeatText">Texto a repetir:</label>
+    <input type="text" id="repeatText" />
+    <label for="repeatCount">Cantidad de repeticiones:</label>
+    <input type="number" id="repeatCount" min="1" />
     <button onclick="repeatString()">Repetir Texto</button>
-    <div id="resultadoRepetir"></div>
-
-    <h2>Invertir Cadena</h2>
-    <label for="textoInvertir">Texto:</label>
-    <input type="text" id="textoInvertir" placeholder="Ingresa el texto">
+    <div id="repeatedText"></div>
+    
+    <!-- Invertir texto -->
+    <label for="reverseText">Texto a invertir:</label>
+    <input type="text" id="reverseText" />
     <button onclick="reverseString()">Invertir Texto</button>
-    <div id="resultadoInvertir"></div>
+    <div id="reversedText"></div>
+    
+    <h2>----Procesamiento de Arreglos----</h2>
+    
+    <!-- Eliminar elemento del arreglo -->
+    <label for="arrayElement">Elemento a eliminar del arreglo:</label>
+    <input type="text" id="arrayElement" />
+    <label for="arrayItems">Elementos actuales del arreglo (separados por comas):</label>
+    <input type="text" id="arrayItems" value="manzana,banana,pera,uva"/>
+    <button onclick="removeFromArray()">Eliminar Elemento</button>
+    <div id="updatedArray"></div>
+    
+    <!-- Obtener títulos de libros -->
+    <h3>Libros</h3>
+    <label for="bookTitlesInput">Ingresa libros (formato: Título-Autor, separados por comas):</label>
+    <input type="text" id="bookTitlesInput" value="Cien Años de Soledad-Gabriel García Márquez,Don Quijote de la Mancha-Miguel de Cervantes,El Principito-Antoine de Saint-Exupéry"/>
+    <button onclick="getTheTitles()">Obtener Títulos</button>
+    <div id="bookTitles"></div>
+    
+    <h2>----Filtrado y Transformación----</h2>
+    
+    <!-- Filtrar números impares -->
+    <h3>Filtrar Números Impares</h3>
+    <label for="numberList">Ingresa números (separados por comas):</label>
+    <input type="text" id="numberList" value="1,2,3,4,5,6,7,8,9,10"/>
+    <button onclick="getOdds()">Filtrar Impares</button>
+    <div id="oddNumbers"></div>
+    
+    <!-- Encontrar duplicados -->
+    <h3>-----Encontrar Duplicados----</h3>
+    <label for="duplicateNumbers">Ingresa números (separados por comas):</label>
+    <input type="text" id="duplicateNumbers" value="1,2,3,2,4,5,3,6,1"/>
+    <button onclick="duplicates()">Mostrar Duplicados</button>
+    <div id="duplicates"></div>
 
 </body>
 </html>
